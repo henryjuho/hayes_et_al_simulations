@@ -22,7 +22,7 @@ def main():
 
         out_stem = '{}{}.rep{}'.format(args.out_dir, args.sim_data.replace('.txt', ''), counter)
 
-        sfs = [int(x) for x in line.rstrip().split()]
+        sfs = [int(x) for x in line.rstrip().split(',')]
 
         sfs_dict = {'SNP': (sfs, 475625)}
 
