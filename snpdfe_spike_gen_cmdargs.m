@@ -7,7 +7,7 @@ folded = False;
 \[Gamma] = {ToExpression[$CommandLine[[4]]]};
 e = {ToExpression[$CommandLine[[5]]]};
 nrep = 100;
-file = ToString[$CommandLine[[14]]];
+file = ToString[$CommandLine[[6]]];
 stream = OpenWrite[file, FormatType -> StandardForm]; 
 flag1 = True; 
 For[i = 1, i <= Length[\[Gamma]], i++, 
