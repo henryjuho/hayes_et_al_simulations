@@ -33,7 +33,7 @@ def main():
         log_name = out_stem + '.log.txt'
         res_name = out_stem + '.res.txt'
 
-        with open(ctl_name) as o:
+        with open(ctl_name, 'w') as o:
             print(ctl, file=o)
 
         cmd = 'anavar1.4 {} {} {} {}'.format(ctl_name, res_name, log_name, counter)
