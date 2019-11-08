@@ -5,7 +5,7 @@ folded = False;
 \[Gamma] = {10}; 
 e = {0.1}; 
 nrep = 5; 
-file = "/Users/Kai/Data/temp_data/test.txt"; 
+file = "test.txt";
 stream = OpenWrite[file, FormatType -> StandardForm]; 
 flag1 = True; 
 For[i = 1, i <= Length[\[Gamma]], i++, 
