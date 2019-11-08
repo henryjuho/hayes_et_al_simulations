@@ -1,6 +1,6 @@
 from __future__ import print_function
 import argparse
-from qsub import q_print as q_sub
+from qsub import q_sub
 from anavar_utils import Snp1ControlFile
 import os
 
