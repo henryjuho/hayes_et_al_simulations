@@ -27,7 +27,7 @@ def main():
         sfs_dict = {'SNP': (sfs, 475625)}
 
         ctl = Snp1ControlFile()
-        ctl.set_data(sfs_dict, 20)
+        ctl.set_data(sfs_dict, 20, gamma_r=(-250, 50))
         control_contents = ctl.construct()
 
         ctl_name = out_stem + '.ctl.txt'
