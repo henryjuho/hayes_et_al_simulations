@@ -10,9 +10,9 @@ def main():
     for res in sys.stdin:
         res = res.rstrip()
 
-        combo, rep = res.split('/')[-1].split('.')[0:2]
+        combo, rep = res.split('/')[-1].split('.rep')
         combo = combo.replace('sfs_', '')
-        rep = rep.replace('rep', '')
+        rep = rep.split('.')[0]
 
         res = ResultsFile(open(res))
         converged = res.converged()
