@@ -5,7 +5,7 @@ import sys
 
 def main():
 
-    print('run', 'imp', 'exit_code', 'theta_1', 'gamma_1', 'e_1', 'lnL', 'converged', 'combo', 'rep', sep='\t')
+    print('run', 'imp', 'exit_code', 'theta_1', 'gamma_1', 'e_1', 'lnL', 'converged', 'combo', 'rep', sep=',')
 
     for res in sys.stdin:
         res = res.rstrip()
@@ -18,8 +18,8 @@ def main():
         converged = res.converged()
         top = res.ml_estimate(as_string=True)
 
-        out_line = top + '\t' + '\t'.join([str(converged), combo, rep])
-        print(out_line)
+        out_line = top.split('\t') + [converged, combo, rep]
+        print(*out_line, sep=',')
 
 
 if __name__ == '__main__':
