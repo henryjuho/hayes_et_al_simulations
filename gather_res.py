@@ -1,3 +1,4 @@
+from __future__ import print_function
 from anavar_utils import ResultsFile
 import sys
 
